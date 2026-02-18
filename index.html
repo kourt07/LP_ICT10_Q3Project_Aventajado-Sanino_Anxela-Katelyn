@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    background-color: slateblue;
+    padding: 40px;
+    max-width: 400px;
+    margin:auto;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    background-color:aliceblue;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+} 
+h2 {
+    text-align:center;
+    color:gold;
+
+}
+input{
+
+    width: 100%;
+    padding:10px;
+    margin:15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size:16px;
+
+}
+
+
+
+#average, #result
+{
+
+    font-weight:bold;
+    color:midnightblue;
+}
+</style>
+
+</head>
+<body>
+    <h1> Which Team are you?</h1>
+    <br>
+    <h4>Select the following to get your team!</h4>
+    <br>
+    <br>
+    <form id="form">
+        <div id="form-control">
+            <label for="name" id="label-name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+        
+        </div>
+         <div class="form-control">
+            <label for="role" id="label-role">Which grade are you?</label>
+            <select name="role" id="role">
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label for="section" id="label-section">Which section are you?</label>
+            <select name="section" id="section">
+                <option value="Ruby">Ruby</option>
+                <option value="Sapphire">Sapphire</option>
+                <option value="Emerald">Emerald</option>
+                <option value="Topaz">Topaz</option>
+            </select>
+        </div>
+         <div class="form-control">
+            <label>Which Sports are you into?
+                <small>(Check all that apply)</small>
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Badminton
+            </label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">Volleyball
+            </label>
+             <label for="inp-3">
+                <input type="checkbox" name="inp">Basketball
+            </label>
+             <label for="inp-4">
+                <input type="checkbox" name="inp">Others
+            </label>
+           
+        </div>
+
+         <div class="form-control">
+            <label>Are you active?</label>
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed">Yes
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed">No
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" name="recommed">Maybe
+            </label>
+        </div>
+    <input type="submit" value="Submit">
+    </form>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
