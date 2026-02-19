@@ -3,15 +3,121 @@
 <head>
  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Page Title</title>
+<title>List of Players</title>
+
 <link rel="stylesheet" href="https://pyscript.net/releases/2026.2.1/core.css" />
  <script type="module" src="https://pyscript.net/releases/2026.2.1/core.js"></script>
    
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: url('brownflowers.jpg') center center / cover no-repeat fixed;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .navbar .brand {
+            color: white;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .navbar .links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .glass-container {
+            margin-top: 120px;
+            margin-bottom: 50px;
+            width: 90%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.8); 
+            backdrop-filter: blur(12px); 
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        h2 {
+            color: #380303;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+       
+        .player-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+      
+    </style>
+    
 </head>
 <body>
 
-<div id="player-container"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background:#380303; padding:8px 16px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Intramurals SY 2025-2026</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Sign up</a></li>
+          <li class="nav-item"><a class="nav-link" href="sw2index.html">Team Checker</a></li>
+          <li class="nav-item"><a class="nav-link" href="players.html">Players</a></li>
+        </ul>
+      </div>
+    </div>
+</nav>
 
-<script type="py" src="player.py"></script>
+    <div class="glass-container">
+        <h2>List of Players</h2>
+        <ul class="player-grid">
+            <li>Cruz</li>
+            <li>De Leon</li>
+            <li>De Luna</li>
+            <li>Dennings</li>
+            <li>Evangelista</li>
+            <li>Garcia</li>
+            <li>Hall</li>
+            <li>Harlow</li>
+            <li>Javier</li>
+            <li>Ligaya</li>
+            <li>Maddox</li>
+            <li>Ngee</li>
+            <li>Orto</li>
+            <li>Pascual</li>
+            <li>Quezon</li>
+            <li>Ramos</li>
+            <li>Roquez</li>
+            <li>Sevilla</li>
+            <li>Serville</li>
+            <li>Setenta</li>
+            <li>Sta. Maria</li>
+            <li>Tinio</li>
+            <li>Tobe</li>
+            <li>Tolentino</li>
+        </ul>
+    </div>
+
+
 </body>
 </html>
